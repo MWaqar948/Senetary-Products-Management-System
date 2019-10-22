@@ -23,24 +23,20 @@ namespace Project
         {
             InitializeComponent();
             conn = DBConnection.getConnection();
+            
+           /* Category.MaximizeBox = false;
+
+            // Set the MinimizeBox to false to remove the minimize box.
+            Category.MinimizeBox = false;*/
+
         }
 
         private void Category_Load(object sender, EventArgs e)
         {
             string query = "select Name,Color,Guage,Bore from Category";
-            display(query);
-        }
-        public void display(string query)
-        {
-            conn.Open();
-
-            SqlCommand cmd = new SqlCommand(query, conn);
-            cmd.ExecuteNonQuery();
-            DataTable dt = new DataTable();
-            System.Data.SqlClient.SqlDataAdapter sda = new SqlDataAdapter(cmd);
-            sda.Fill(dt);
+            DataTable dt=DBConnection.display(query);
             dataGridView1.DataSource = dt;
-            conn.Close();
+
         }
 
         private void addBtn_Click(object sender, EventArgs e)
@@ -51,11 +47,7 @@ namespace Project
             }
         }
 
-        private void categoryDetail_Click(object sender, EventArgs e)
-        {
-            string query = "select Name,Color,Guage,Bore from Category";
-            display(query);
-        }
+       
 
         private void deleteBtn_Click(object sender, EventArgs e)
         {
@@ -110,6 +102,28 @@ namespace Project
         {
              rows=dataGridView1.SelectedRows.Count;
                        
+        }
+
+        private void searchBtn_Click(object sender, EventArgs e)
+        {
+            string query = "select Name,Color,Guage,Bore from Category where Name LIKE '%"+nameTxt.Text+"%'";
+            DataTable dt=DBConnection.display(query);
+            if (dt.Rows.Count > 0)
+            {
+                dataGridView1.DataSource = dt;
+            }
+            else
+            {
+                MessageBox.Show("Nothing Found");
+            }
+            
+        }
+
+        private void refreshBtn_Click(object sender, EventArgs e)
+        {
+            string query = "select Name,Color,Guage,Bore from Category";
+            DataTable dt=DBConnection.display(query);
+            dataGridView1.DataSource = dt;
         }
     }
 }

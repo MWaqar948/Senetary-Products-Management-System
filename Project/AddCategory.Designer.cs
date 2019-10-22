@@ -45,7 +45,7 @@
             this.label6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(179, 188);
+            this.label6.Location = new System.Drawing.Point(179, 202);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(58, 20);
             this.label6.TabIndex = 35;
@@ -57,7 +57,7 @@
             this.label5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(179, 145);
+            this.label5.Location = new System.Drawing.Point(179, 244);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(43, 20);
             this.label5.TabIndex = 34;
@@ -69,7 +69,7 @@
             this.label3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(179, 98);
+            this.label3.Location = new System.Drawing.Point(179, 125);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 20);
             this.label3.TabIndex = 31;
@@ -78,7 +78,7 @@
             // nameTxt
             // 
             this.nameTxt.BackColor = System.Drawing.Color.White;
-            this.nameTxt.Location = new System.Drawing.Point(395, 98);
+            this.nameTxt.Location = new System.Drawing.Point(395, 125);
             this.nameTxt.Name = "nameTxt";
             this.nameTxt.Size = new System.Drawing.Size(227, 20);
             this.nameTxt.TabIndex = 45;
@@ -89,7 +89,7 @@
             this.Price.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Price.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Price.Location = new System.Drawing.Point(179, 229);
+            this.Price.Location = new System.Drawing.Point(179, 165);
             this.Price.Name = "Price";
             this.Price.Size = new System.Drawing.Size(55, 20);
             this.Price.TabIndex = 35;
@@ -121,7 +121,7 @@
             "1(1/4)",
             "1(1/2)",
             "2.0"});
-            this.boreBox.Location = new System.Drawing.Point(395, 144);
+            this.boreBox.Location = new System.Drawing.Point(395, 244);
             this.boreBox.Name = "boreBox";
             this.boreBox.Size = new System.Drawing.Size(227, 21);
             this.boreBox.TabIndex = 43;
@@ -182,7 +182,7 @@
             "5.8 mm",
             "5.9 mm",
             "6.0 mm"});
-            this.guageBox.Location = new System.Drawing.Point(395, 187);
+            this.guageBox.Location = new System.Drawing.Point(395, 202);
             this.guageBox.Name = "guageBox";
             this.guageBox.Size = new System.Drawing.Size(227, 21);
             this.guageBox.TabIndex = 43;
@@ -204,7 +204,7 @@
             "CRYSTAL NON TRANSPARENT",
             "BLUE TRANSPARENT",
             "BLUE NON TRANSPARENT"});
-            this.colourBox.Location = new System.Drawing.Point(395, 228);
+            this.colourBox.Location = new System.Drawing.Point(395, 165);
             this.colourBox.Name = "colourBox";
             this.colourBox.Size = new System.Drawing.Size(227, 21);
             this.colourBox.TabIndex = 43;

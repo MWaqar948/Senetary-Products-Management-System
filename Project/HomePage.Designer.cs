@@ -33,7 +33,7 @@
             this.signUpBtn = new System.Windows.Forms.Button();
             this.homeBtn = new System.Windows.Forms.Button();
             this.studentBtn = new System.Windows.Forms.Button();
-            this.CourseBtn = new System.Windows.Forms.Button();
+            this.brandBtn = new System.Windows.Forms.Button();
             this.categoryBtn = new System.Windows.Forms.Button();
             this.signOutBtn = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
@@ -48,7 +48,7 @@
             this.panel2.Controls.Add(this.signUpBtn);
             this.panel2.Controls.Add(this.homeBtn);
             this.panel2.Controls.Add(this.studentBtn);
-            this.panel2.Controls.Add(this.CourseBtn);
+            this.panel2.Controls.Add(this.brandBtn);
             this.panel2.Controls.Add(this.categoryBtn);
             this.panel2.Controls.Add(this.signOutBtn);
             this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -62,11 +62,11 @@
             this.reportBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.reportBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.reportBtn.ForeColor = System.Drawing.SystemColors.Menu;
-            this.reportBtn.Location = new System.Drawing.Point(521, 14);
+            this.reportBtn.Location = new System.Drawing.Point(431, 13);
             this.reportBtn.Name = "reportBtn";
             this.reportBtn.Size = new System.Drawing.Size(63, 27);
             this.reportBtn.TabIndex = 7;
-            this.reportBtn.Text = "Report";
+            this.reportBtn.Text = "Sales";
             this.reportBtn.UseVisualStyleBackColor = false;
             // 
             // signUpBtn
@@ -74,7 +74,7 @@
             this.signUpBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.signUpBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.signUpBtn.ForeColor = System.Drawing.SystemColors.Menu;
-            this.signUpBtn.Location = new System.Drawing.Point(429, 15);
+            this.signUpBtn.Location = new System.Drawing.Point(532, 14);
             this.signUpBtn.Name = "signUpBtn";
             this.signUpBtn.Size = new System.Drawing.Size(80, 27);
             this.signUpBtn.TabIndex = 6;
@@ -106,18 +106,18 @@
             this.studentBtn.UseVisualStyleBackColor = false;
             this.studentBtn.Click += new System.EventHandler(this.studentBtn_Click);
             // 
-            // CourseBtn
+            // brandBtn
             // 
-            this.CourseBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.CourseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.CourseBtn.ForeColor = System.Drawing.SystemColors.Menu;
-            this.CourseBtn.Location = new System.Drawing.Point(320, 14);
-            this.CourseBtn.Name = "CourseBtn";
-            this.CourseBtn.Size = new System.Drawing.Size(95, 27);
-            this.CourseBtn.TabIndex = 4;
-            this.CourseBtn.Text = "Brand";
-            this.CourseBtn.UseVisualStyleBackColor = false;
-            this.CourseBtn.Click += new System.EventHandler(this.CourseBtn_Click);
+            this.brandBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.brandBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.brandBtn.ForeColor = System.Drawing.SystemColors.Menu;
+            this.brandBtn.Location = new System.Drawing.Point(320, 14);
+            this.brandBtn.Name = "brandBtn";
+            this.brandBtn.Size = new System.Drawing.Size(95, 27);
+            this.brandBtn.TabIndex = 4;
+            this.brandBtn.Text = "Brand";
+            this.brandBtn.UseVisualStyleBackColor = false;
+            this.brandBtn.Click += new System.EventHandler(this.brandBtn_Click);
             // 
             // categoryBtn
             // 
@@ -149,9 +149,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1280, 800);
+            this.ClientSize = new System.Drawing.Size(1280, 768);
             this.Controls.Add(this.panel2);
             this.Name = "HomePage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.HomePage_Load);
             this.panel2.ResumeLayout(false);
@@ -166,7 +167,7 @@
         public System.Windows.Forms.Button signUpBtn;
         public System.Windows.Forms.Button homeBtn;
         public System.Windows.Forms.Button studentBtn;
-        public System.Windows.Forms.Button CourseBtn;
+        public System.Windows.Forms.Button brandBtn;
         public System.Windows.Forms.Button categoryBtn;
         private System.Windows.Forms.Button signOutBtn;
     }

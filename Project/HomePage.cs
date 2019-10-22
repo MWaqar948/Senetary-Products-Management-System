@@ -41,16 +41,19 @@ namespace Project
             }
         }
 
-        private void CourseBtn_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void categoryBtn_Click(object sender, EventArgs e)
         {
             using (Category c = new Category())
             {
                 c.ShowDialog();
+            }
+        }
+
+        private void brandBtn_Click(object sender, EventArgs e)
+        {
+            using(Brand b=new Brand())
+            {
+                b.ShowDialog();
             }
         }
     }

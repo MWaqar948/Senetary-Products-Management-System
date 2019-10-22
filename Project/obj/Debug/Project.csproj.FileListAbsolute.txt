@@ -16,3 +16,5 @@ C:\Users\Muhammad Waqar\source\repos\Project\Project\obj\Debug\Project.AddProduc
 C:\Users\Muhammad Waqar\source\repos\Project\Project\obj\Debug\Project.Category.resources
 C:\Users\Muhammad Waqar\source\repos\Project\Project\obj\Debug\Project.AddCategory.resources
 C:\Users\Muhammad Waqar\source\repos\Project\Project\obj\Debug\Project.UpdateProduct.resources
+C:\Users\Muhammad Waqar\source\repos\Project\Project\obj\Debug\Project.Brand.resources
+C:\Users\Muhammad Waqar\source\repos\Project\Project\obj\Debug\Project.AddBrand.resources

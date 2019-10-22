@@ -116,12 +116,6 @@ namespace Project
             rows = dataGridView1.SelectedRows.Count;
         }
 
-        private void detailBtn_Click(object sender, EventArgs e)
-        {
-            string query = "select Category,Brand,Quantity,Price from Product";
-            display(query);
-        }
-
         private void productUpdateBtn_Click(object sender, EventArgs e)
         {
             if(rows == 0)
@@ -152,6 +146,20 @@ namespace Project
                     up.ShowDialog();
                 }
 
+            }
+        }
+
+        private void searchBtn_Click(object sender, EventArgs e)
+        {
+            string query = "select Category,Brand,Quantity,Price from Product where Category LIKE '%" + nameTxt.Text+"%'";
+            DataTable dt=DBConnection.display(query);
+            if (dt.Rows.Count > 0)
+            {
+                dataGridView1.DataSource = dt;
+            }
+            else
+            {
+                MessageBox.Show("Nothing Found");
             }
         }
     }

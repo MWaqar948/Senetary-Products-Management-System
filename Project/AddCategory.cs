@@ -34,19 +34,39 @@ namespace Project
             try
             {
                 conn.Open();
-                string query2 = "insert into [Category] values('" + nameTxt.Text + "','" + colourBox.Text + "','" + guageBox.Text + "','" + boreBox.Text + "')";
-                MessageBox.Show(query2);
-                SqlCommand command2 = new SqlCommand(query2, conn);
-                int result = command2.ExecuteNonQuery();
-                if (result > 0)
+                string query = "select * from Category where Color=@Color AND Guage=@Guage AND Bore=@Bore";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.Add(new SqlParameter("@Color", colourBox.Text));
+                cmd.Parameters.Add(new SqlParameter("@Guage", guageBox.Text));
+                cmd.Parameters.Add(new SqlParameter("@Bore", boreBox.Text));
+                cmd.ExecuteNonQuery();
+                DataTable dt = new DataTable();
+                System.Data.SqlClient.SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                sda.Fill(dt);
+                MessageBox.Show("Rows: " + dt.Rows.Count);
+                if (dt.Rows.Count > 0)
                 {
-                    MessageBox.Show("Category Created");
+                    MessageBox.Show("This Category already exists");
+
                 }
                 else
                 {
-                    MessageBox.Show("Category cannot be created");
+
+                    string query2 = "insert into [Category] values('" + nameTxt.Text + "','" + colourBox.Text + "','" + guageBox.Text + "','" + boreBox.Text + "')";
+                    MessageBox.Show(query2);
+                    SqlCommand command2 = new SqlCommand(query2, conn);
+                    int result = command2.ExecuteNonQuery();
+                    if (result > 0)
+                    {
+                        MessageBox.Show("Category Created");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Category cannot be created");
+                    }
+                    conn.Close();
                 }
-                conn.Close();
             }
             catch (Exception ex)
             {
@@ -78,8 +98,10 @@ namespace Project
             else
             {
 
-                MessageBox.Show("All is well!");
+                //MessageBox.Show("All is well!");
                 addCategory();
+                string query = "select Name,Color,Guage,Bore from Category";
+                DBConnection.display(query);
 
             }
         }
