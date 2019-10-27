@@ -18,3 +18,4 @@ C:\Users\Muhammad Waqar\source\repos\Project\Project\obj\Debug\Project.AddCatego
 C:\Users\Muhammad Waqar\source\repos\Project\Project\obj\Debug\Project.UpdateProduct.resources
 C:\Users\Muhammad Waqar\source\repos\Project\Project\obj\Debug\Project.Brand.resources
 C:\Users\Muhammad Waqar\source\repos\Project\Project\obj\Debug\Project.AddBrand.resources
+C:\Users\Muhammad Waqar\source\repos\Project\Project\obj\Debug\Project.Sales.resources
